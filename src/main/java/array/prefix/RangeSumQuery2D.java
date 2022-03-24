@@ -2,7 +2,7 @@ package array.prefix;
 
 /**
  * https://leetcode.com/problems/range-sum-query-2d-immutable/
- * preSum[i][j] = the sum of region (0, 0, i, j)
+ * preSum[i][j] = the sum of region (0, 0, i - 1, j - 1)
  * sumRegion(r1, c1, r2, c2) = preSum[r2+1][c2+1] - preSum[r1][c2+1] - preSum[r2+1][c1] + preSum[r1][c1]
  *
  *           c1   c2
